@@ -1,29 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width= , initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width= , initial-scale=1.0" />
     <title>Profile Card Demo</title>
-    <link rel="stylesheet" href="profile.css">
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="profile.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-</head>
-
-<body>
+  <body>
     <section class="profilecard_container">
-        <div class="profilecard_wrapper">
-            <section class="topprofile_wrapper">
-                <img class="profilepic" src="images/The-Weeknd.webp" alt="" />
-            </section>
-            <section class="bottomsection">
-
-
-            </section>
-        </div>
-
+      <div class="profilecard_wrapper">
+        <section class="topprofile_wrapper">
+          <!-- <img class="profilepic" src="images/great2.jpg" alt="" /> -->
+          <div class="profilepic"></div>
+        </section>
+        <section class="bottomsection">
+          <h2 class="text">Great Owumi</h2>
+          <h4 class="textb">Software Engineer Intern</h4>
+          <!-- Social icons -->
+          <div class="center-content">
+            <div class="icons">
+              <a href="https://www.facebook.com/greatowumi" target="_blank"
+                ><i class="bx bxl-facebook-circle facebook top-icons"></i
+              ></a>
+              <a href="https://www.twitter.com/thegreatowumi" target="_blank">
+                <i class="bx bxl-twitter twitter top-icons"></i
+              ></a>
+              <a href="https://www.instagram.com/greatowumi" target="_blank"
+                ><i class="bx bxl-instagram-alt ig top-icons"></i
+              ></a>
+              <a href="https://www.youtube.com/greatowumi" target="_blank"
+                ><i class="bx bxl-youtube yt top-icons"></i
+              ></a>
+            </div>
+            <div id="button-container">
+              <button class="button">Subscribe</button>
+              <button class="button">Message</button>
+            </div>
+            <!-- footer icons  -->
+            <footer>
+              <i class="bx bx-heart">60k |</i>
+              <i class="bx bx-message-rounded-dots">20k |</i>
+              <i class="bx bx-share">12k |</i>
+            </footer>
+          </div>
+        </section>
+      </div>
     </section>
-
-</body>
-
+  </body>
 </html>

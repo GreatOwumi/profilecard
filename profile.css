@@ -1,40 +1,126 @@
- body{
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-.profilecard_container{
-    height: 100%;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Roboto", sans-serif;
 }
-.profilecard_wrapper{
-    width: 30%;
-    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
-    border-radius: 20px;
-    height: 60%;
+.profilecard_container {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-.topprofile_wrapper{
-    height: 40%; 
-    background-color:blue ;
-    border-radius: 20px 20px 0 0;
-    display: flex;
-    justify-content: center;
-    position: relative;
- }
- .bottomsection{
-    height:60%;
-    background-color: #ffffff;   
- }
- .profilepic{
-    height: 130px;
-    width: 130px;
-    border-radius: 50%;
-    border: 2px solid #ffffff;
-    position: absolute;
-    
- }
+.profilecard_wrapper {
+  width: 30%;
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+  border-radius: 20px;
+  height: 60%;
+}
+.topprofile_wrapper {
+  height: 40%;
+  background-color: rgb(21, 110, 193);
+  border-radius: 20px 20px 0 0;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+.profilepic {
+  height: 160px;
+  width: 160px;
+  border-radius: 50%;
+  border: 2px solid rgb(21, 110, 193);
+  position: absolute;
+  top: 65%; /* Move the image down by half of its height */
+  transform: translateY(-50%); /* Adjust for the top position */
+  max-width: 100%; /* Set the maximum width to 100% */
+  max-height: 100%; /* Set the maximum height to 100% */
+  background-image: url('images/great2.jpg'); /* Replace with the actual path to your image */
+            background-size: cover; /* Ensures the image covers the entire div */
+            background-position: center; 
+
+}
+.bottomsection {
+  height: 60%;
+  background-color: #ffffff;
+  text-align: center;
+  margin-bottom: 10px;
+  padding: 25px;
+}
+.center-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+#button-container {
+  display: flex;
+  margin-bottom: 15px;
+}
+.button {
+  margin: 0 15px;
+  padding: 10px 16px;
+  border-radius: 25px;
+  font-size: 12px;
+  border: none;
+  background-color: rgb(21, 110, 193);
+  color: #fff;
+  margin-bottom: 10px;
+}
+.button:hover{
+  cursor: pointer;
+}
+.text {
+  margin-bottom: 10px;
+  font-weight: 500;
+}
+.textb {
+  margin-bottom: 15px;
+  font-weight: 400;
+}
+
+.icons {
+  font-size: 20px;
+  margin-bottom: 25px;
+}
+
+.top-icons {
+  border-radius: 50px;
+  padding: 4px;
+  background-color: rgb(47, 130, 207);
+}
+.top-icons:hover{
+cursor: pointer;
+};
+.textb {
+  margin-bottom: 20px;
+}
+
+.facebook {
+  color: white;
+  background-color: rgb(25, 43, 209);
+}
+.yt {
+  color: white;
+  background-color: red;
+}
+.ig {
+  background-color: rgb(236, 32, 66);
+  color: #ffffff;
+}
+.twitter {
+  color: whitesmoke;
+  background-color: rgb(47, 130, 207);
+}
+a{
+  color: none;
+}
